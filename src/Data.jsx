@@ -77,7 +77,7 @@ export const skills = [
     {
         id: 2,
         title: 'Frameworks : ',
-        description: 'Python, Java, HTML/CSS, JavaScript, SQL', 
+        description: 'Django, React', 
     },
 
     {
