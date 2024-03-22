@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import About from './Pages/About/About';
@@ -8,11 +8,19 @@ import Portfolio from './Pages/Portfolio/Portfolio';
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
-  const [theme, setTheme] = useState('light');
+ 
+  const initialTheme = localStorage.getItem('theme') || 'light';
+  const [theme, setTheme] = useState(initialTheme);
 
   const toggleTheme = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light');
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+    localStorage.setItem('theme', newTheme);
   };
+
+  useEffect(() => {
+    localStorage.setItem('theme', theme);
+  }, [theme]);
 
   return (
     <div className={`container ${theme}`}>
@@ -20,7 +28,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
-        <Route path='/portfolio' element={<Portfolio theme={theme} />} /> 
+        <Route path='/portfolio' element={<Portfolio theme={theme} />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
     </div>
