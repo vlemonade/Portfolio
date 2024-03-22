@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Judson', sans-serif;
+}
+
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+
+li{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+button{
+    background-color: transparent;
+}
+
+:root{
+    --primaryColor: #FF5173;
+    --secondaryColor: #FFD6E0;
+    --buttonColor: #FF5173;
+    --borderColorNav: #fcbbcbde;
+    --hoverColor: #FFD6E0;
+    --whiteColor: #FFFFFF;
+    --grayColor: rgb(97, 81, 93);
+    --darkmode: #232D3F;
+    --black1Color: rgb(32, 31, 31);
+
+    --smallTextSize: 13px;
+    --small1TextSize: 18px;
+    --small2TextSize: 30px;
+    --smallHomeTextSize: 20px;
+
+    --small20TextSize: 20px;
+
+    --smallIconTextSize: 20px;
+
+    --largeTextSize: 25px;
+    --titleTextSize: 100px;
+    --introTextSize: 20px;
+
+    --titlesmallTextSize: 60px;
+    --title800TextSize: 70px;
+
+    --navbarIconSize: 26px;
+
+    --home800Titleh2Text: 30px;
+    --home800Titleh1Text: 60px;
+    --home800TitlepText: 17px;
+
+    
+    --home900Titleh2Text: 30Px;
+    --home900Titleh1Text: 75px;
+    --home900TitlepText: 20px;
+
+        
+    --home1000Titleh2Text: 40Px;
+    --home1000Titleh1Text: 90px;
+    --home1000TitlepText: 30px;
+    --home1000TitleBText: 20px;
+
+    --fw200: 200;
+    --fw500: 500;
+    --fw900: 900;
+
+    --lightMode: #FFFFFF;
+    --darkMode: #1F2544;
+}
+
+
+
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #FFFFFF; 
+    color: #000000;
+    transition: .5s;
+  }
+  
+ 
+  .container.dark {
+    background-color: #222; 
+    color: #FFFFFF; 
+  }
+

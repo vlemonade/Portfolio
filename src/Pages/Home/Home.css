@@ -1,0 +1,235 @@
+.home{
+    padding: 30px;
+    margin-top: 45px;
+}
+
+.border{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.profile{
+    width: 250px;
+    margin: 15px 0;
+    
+}
+
+
+
+.name h1{
+    font-size: var(--titlesmallTextSize);
+    color: var(--primaryColor);
+    line-height: 50px;
+    font-weight: 900;
+}
+
+.name h2{
+    font-size: var(--small20TextSize);
+}
+
+.me p{
+    line-height: 1.5;
+    font-size: var(--small1TextSize);
+    font-weight:200;
+    margin-block: 16px 32px;
+}
+
+.button{
+    display: inline-block;
+    color: var(--primaryColor);
+    border: 1px solid var(--primaryColor);
+    padding: 15px 70px 15px 35px;
+    border-radius: 35px;
+    font-size: var(--small20TextSize);
+    font-weight: var(--fw900);
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.buttonIcon{
+    background-color: var(--primaryColor);
+    position: absolute;
+    inset-block: -2px;
+    right: 0px;
+    width: 55px;
+    border-radius: 50% ;
+    color: var(--whiteColor);
+    font-size: var(--largeTextSize);
+    text-align: center;
+    line-height: 67px;
+}
+
+.button:hover{
+    color: var(--whiteColor);
+}
+
+.button::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: var(--primaryColor);
+    transform: translateX(100%);
+    z-index: -1;
+    transition: all .25s ease-in-out;
+}
+
+.button:hover::before{
+    transform: translateX(0);
+}
+
+
+@media screen and (min-width:800px) {
+    .home{
+        padding: 70px 90px 10px 90px;
+        margin-top: 0;
+    }
+
+    .border{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .details{
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .me{
+        padding: 0 10px;
+        text-align: center;
+    }
+
+
+    .name h1{
+        font-size: var(--home800Titleh1Text);
+        color: var(--primaryColor);
+        line-height: 60px;
+        font-weight: 900;
+    }
+    
+    .name h2{
+        font-size: var(--home800Titleh2Text);
+    }
+
+    .profile{
+        width: 360px;
+        padding-top: 15px;
+
+    }
+
+    .me p{
+        font-size: var(--home800TitlepText);
+    }
+
+        
+    .button{
+        padding: 15px 70px 15px 20px;
+        border-radius: 35px;
+        font-size: var(--home800TitlepText);
+        font-weight: var(--fw900);
+    }
+
+    .buttonIcon{
+        line-height: 60px;
+    }
+
+}
+
+@media screen and (min-width:950px) {
+    
+    
+    .details{
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .me{
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .name h1{
+        font-size: var(--home900Titleh1Text);
+        color: var(--primaryColor);
+        line-height: 60px;
+        font-weight: 900;
+    }
+    
+    .name h2{
+        font-size: var(--home900Titleh2Text);
+    }
+
+    .profile{
+        width: 400px;
+        padding-top: 15px;
+
+    }
+
+    .me p{
+        font-size: var(--home900TitlepText);
+    }
+
+        
+    .button{
+        padding: 15px 70px 15px 20px;
+        border-radius: 35px;
+        font-size: var(--home900TitlepText);
+        font-weight: var(--fw900);
+    }
+
+}
+
+
+
+
+@media screen and (min-width:1200px) {
+    
+
+    .me{
+        padding: 0 70px;
+        text-align: center;
+    }
+
+    .name h1{
+        font-size: var(--home1000Titleh1Text);
+        color: var(--primaryColor);
+        line-height: 60px;
+        font-weight: 900;
+    }
+    
+    .name h2{
+        font-size: var(--home1000Titleh2Text);
+    }
+
+    .profile{
+        width: 400px;
+        padding-top: 15px;
+
+    }
+
+    .me p{
+        font-size: var(--home1000TitlepText);
+    }
+
+        
+    .button{
+        padding: 15px 70px 15px 35px;
+        border-radius: 35px;
+        font-size: var(--home1000TitleBText);
+        font-weight: var(--fw900);
+    }
+
+    
+    .buttonIcon{
+        line-height: 66px;
+    }
+}
+

@@ -1,0 +1,88 @@
+.portfolio {
+    padding: 30px;
+    margin-top: 45px;
+    text-align: center;
+}
+
+.portfolioList {
+    border: 1px solid var(--primaryColor);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    text-align: start;
+    padding: 20px;
+}
+
+.picHolder {
+    height: 160px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.pics {
+    border-radius: 10px;
+    object-fit: cover;
+    transition: all .3s ease;
+}
+
+.portfolioList:hover .pics {
+    transform: scale(1.1);
+}
+
+.name {
+    font-size: var(--small2TextSize);
+}
+
+.desc {
+    font-size: var(--smallTextSize);
+    padding-bottom: 20px;
+    line-height: 1.5;
+}
+
+.viewButton {
+    border: 1px solid var(--primaryColor);
+    font-size: var(--smallTextSize);
+    border-radius: 20px;
+    padding: 7px 30px;
+    transition: all .2s ease;
+    background-color: none;
+}
+
+.viewButton:hover {
+    background-color: var(--hoverColor);
+}
+
+.darkModeButton, .darkMode .codeIcon {
+    color: #FFF; 
+}
+
+.darkModeButton:hover {
+    background-color: var(--primaryColor);
+}
+
+.code {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.codeIcon {
+    font-size: 15px;
+    line-height: 10px;
+    padding-right: 5px;
+    color: rgb(36, 36, 36);
+}
+
+@media screen and (min-width: 800px) {
+    .portfolio {
+        padding: 60px 100px 0px 60px;
+        margin: auto;
+    }
+
+    .workItem {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}

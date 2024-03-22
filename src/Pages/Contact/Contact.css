@@ -1,0 +1,202 @@
+    .contact{
+        padding: 30px;
+        margin-top: 45px;
+        text-align: center;
+    }
+
+    .bottomMess img{
+        display: none;
+    }
+
+    .infoMess .subheader{
+        font-size: 30px;
+    }
+
+    .mess{
+        line-height: 1.5;
+        font-size: 14px;
+    }
+
+
+    .contactInfo{
+        text-align: start;
+        margin: 40px auto;
+    }
+
+
+    .messageCOntact{
+    position: relative;
+    margin: 30px auto;
+    }
+
+    .messageCOntact p{
+        padding-left: 48px;
+    }
+
+    .iconn{
+        position: absolute;
+        left: 0;
+        font-size: 25px;
+        border-radius: 5px;
+        padding: 3px 6px;
+        line-height: 10px;
+        color: var(--primaryColor);
+        background-color: antiquewhite;
+    }
+
+    .socialMedia{
+        display: flex;
+        align-items: center;
+        margin: 50px auto;
+    }
+
+    .socialLink{
+        background-color: antiquewhite;
+        color: var(--primaryColor);
+        font-size: 20px;
+        border-radius: 50%;
+        padding: 10px 10px 5px 10px;
+        transition:  0.2s ease;
+    }
+
+    .socialLink:hover{
+        background-color: var(--primaryColor);
+        color: white;
+    }
+
+    .socialLink:not(:last-child){
+        margin-right: 8px;
+    }
+
+
+    .contactForm{
+        background-color: var(--hoverColor);
+        padding: 15px 10px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    .inputBox{
+        margin-bottom: 10px;
+    }
+
+    .formControl{
+        width: 100%;
+        font-size: 18px;
+        padding: 8px 10px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+    }
+
+
+    .formControTextarea{
+        width: 100%;
+        height: 200px;
+        font-size: 18px;
+        padding: 8px 10px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        resize: none;
+    }
+
+
+
+    .SButton{
+        display: inline-block;
+        color: var(--primaryColor);
+        border: 1px solid var(--primaryColor);
+        padding: 10px 60px 10px 30px;
+        border-radius: 35px;
+        font-size: 17px;
+        font-weight: var(--fw900);
+        position: relative;
+        overflow: hidden;
+        margin-top: 10px;
+        background-color: white;
+        z-index: 10;
+    }
+
+    .sendButtonIcon{
+        background-color: var(--primaryColor);
+        position: absolute;
+        inset-block: -2px;
+        right: -3px;
+        width: 45px;
+        border-radius: 50% ;
+        color: var(--whiteColor);
+        font-size: 17px;
+        text-align: center;
+        line-height: 50px;
+    }
+
+
+    .SButton:hover{
+        color: var(--whiteColor);
+    }
+
+    .SButton::before{
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: var(--primaryColor);
+        transform: translateX(100%);
+        z-index: -1;
+        transition: all .25s ease-in-out;
+    }
+
+    .SButton:hover::before{
+        transform: translateX(0);
+    }
+
+    @media screen and (min-width: 800px) {
+
+        .contact{
+            padding: 60px 100px 0px 60px;
+            margin: auto;
+        }
+
+        .dataInfo{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+    }
+
+    @media screen and (min-width: 1100px) {
+
+        .bottomMess{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0px;
+        }
+        .bottomMess img{
+            display: block;
+            width: 320px;
+        }
+
+        .infoMess .subheader{
+            font-size: 40px;
+            padding-top: 0px;
+        }
+        
+        .mess{
+            line-height: 1.5;
+            font-size: 16px;
+        }
+
+        .socialMedia{
+            justify-content: center;
+        
+        }
+        
+    }
+
+
+
+
+
+

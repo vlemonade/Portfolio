@@ -1,0 +1,173 @@
+
+.about{
+        padding: 30px;
+        margin-top: 45px;
+        text-align: center;
+}
+
+.header{
+    font-size: var(--titlesmallTextSize);
+    color: var(--blackColor);
+    font-weight: var(--fw900);
+    margin-bottom: 30px;
+    line-height: 50px;
+}
+
+.header span{
+    color: var(--primaryColor);
+}
+
+.infoList .personalinfo, .skillList .skills{
+    padding: 5px;
+}
+
+
+
+.infoList .title, .skillList .title{
+    color: var(--grayColor);
+}
+
+.Dbutton{
+    display: inline-block;
+    color: var(--primaryColor);
+    border: 1px solid var(--primaryColor);
+    padding: 10px 60px 10px 30px;
+    border-radius: 35px;
+    font-size: 17px;
+    font-weight: var(--fw900);
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.DbuttonIcon{
+    background-color: var(--primaryColor);
+    position: absolute;
+    inset-block: -2px;
+    right: -3px;
+    width: 45px;
+    border-radius: 50% ;
+    color: var(--whiteColor);
+    font-size: 17px;
+    text-align: center;
+    line-height: 50px;
+    z-index: 100;
+}
+.right, .skillsBOx{
+    margin-top: 30px;
+}
+
+.Dbutton:hover{
+    color: var(--whiteColor);
+    z-index: 100
+}
+
+.Dbutton::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: var(--primaryColor);
+    transform: translateX(100%);
+    z-index: -1;
+    transition: all .25s ease-in-out;
+}
+
+.Dbutton:hover::before{
+    transform: translateX(0);
+}
+
+
+
+
+.educations{
+    text-align: start;
+    padding-left: 60px;
+    position: relative;
+    line-height: 1.5;
+}
+
+
+.educations:not(:last-child){
+    margin-bottom: 50px
+}
+
+.educations:first-child{
+    margin-top: 20px
+}
+
+.educations::before{
+    content: '';
+    position: absolute;
+    inset-block: 0;
+    left: 20px;
+    border-left: 1px solid var(--primaryColor);
+}
+
+.EIcon{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+}
+
+
+.educations .year{
+    color: var(--grayColor);
+    font-style: italic;
+}
+
+.educations .school{
+    padding-top: 10px;
+}
+
+.educations .desription{
+    padding-bottom: 10px;
+}
+
+
+
+
+@media screen and (min-width:800px){
+    
+    .header{
+        margin-bottom: 50px;
+    }
+    
+.about{
+    padding: 60px 100px 0px 60px;
+    margin: auto;
+}
+
+.info, .infoList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.info{
+    justify-items: center;
+}
+
+.left {
+    text-align: start;
+}
+
+.subTitle{
+    padding-bottom: 10px;
+}
+
+.right{
+    margin: 0;
+}
+
+.right .subTitle {
+    text-align: start;
+    padding-left: 30px;
+    padding-bottom: 0;
+}
+
+}
