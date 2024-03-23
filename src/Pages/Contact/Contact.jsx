@@ -57,7 +57,7 @@ const Contact = () => {
                     <span className="iconn"><IoMailOpenOutline /></span>
                     Email Me:
                   </p>
-                  <p className="info">
+                  <p>
                     vhoneyvhen@gmail.com
                   </p>
                 </div>
@@ -66,7 +66,7 @@ const Contact = () => {
                     <span className="iconn"><IoCallOutline /></span>
                     Call Me:
                   </p>
-                  <p className="info">
+                  <p >
                     09394303968            
                   </p>
                 </div>
