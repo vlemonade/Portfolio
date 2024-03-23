@@ -4,6 +4,16 @@
         text-align: center;
     }
 
+    .dataInfo {
+        opacity: 0;
+        transition: opacity .5s ease-in;
+      }
+      
+      .dataInfo.fade-in {
+        opacity: 1;
+      }
+      
+
     .bottomMess img{
         display: none;
     }

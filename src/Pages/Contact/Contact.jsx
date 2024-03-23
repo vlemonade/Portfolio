@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import './Contact.css';
 import { IoMailOpenOutline } from "react-icons/io5";
 import { IoCallOutline } from "react-icons/io5";
@@ -11,6 +11,12 @@ import Image from '../../assets/birthday.png';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const form = useRef();
   const [promptMessage, setPromptMessage] = useState(null);
 
@@ -36,7 +42,7 @@ const Contact = () => {
   return (
     <div className="contact">
       <div className="header">Get in <span>touch</span></div>
-      <div className="dataInfo">
+      <div className={`dataInfo ${mounted ? 'fade-in' : ''}`}>
         <div className="midDiv">
           <div className="infoMess">
             <div className="subheader">Connect with me!</div>

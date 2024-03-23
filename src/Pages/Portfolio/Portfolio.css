@@ -11,6 +11,14 @@
     overflow: hidden;
     text-align: start;
     padding: 20px;
+    transition: transform 0.5s ease, opacity 0.3s ease;
+    opacity: 0;
+    transform: translateX(-50%);
+}
+
+.portfolioList.slide-in {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .picHolder {
@@ -75,14 +83,21 @@
 }
 
 @media screen and (min-width: 800px) {
-    .portfolio {
-        padding: 60px 100px 0px 60px;
-        margin: auto;
-    }
 
-    .workItem {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
+    .portfolioList {
+        opacity: 0; 
+        animation: fadeInAnimation 0.5s ease forwards; 
+      }
+
+    .portfolio {
+      padding: 60px 100px 0px 60px;
+      margin: auto;
     }
-}
+  
+    .portfolioListContainer  {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+  }
+  
