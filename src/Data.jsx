@@ -4,6 +4,7 @@ import { IoSchool } from "react-icons/io5";
 import Work1 from '../src/assets/DeepBelow_Login.png';
 import Work2 from '../src/assets/SeniorCare.png';
 import Work3 from '../src/assets/Cafe_Management_System.png';
+import Work4 from '../src/assets/MasterMind.png';
 
 
 export const personalInfo = [
@@ -134,6 +135,12 @@ export const portfolio = [
         title: 'DeepBelow',
         description: 'A responsive website for the Monthly Monetary Allowance Distribution Information System with face recognition and SMS features in the barangays of Manila. This is built using Django, Python, MySQL, HTML, and CSS.', 
     },
+
+    {
+        id: 4,
+        title: 'MasterMind',
+        description: 'A responsive website for the Monthly Monetary Allowance Distribution Information System with face recognition and SMS features in the barangays of Manila. This is built using Django, Python, MySQL, HTML, and CSS.', 
+    },
 ] 
 
 export const navlinks = [
@@ -188,6 +195,15 @@ export const portfolioList = [
         desc: 'A comprehensive Python GUI application designed to streamline order processing',
         language: 'Python',
         path: 'https://github.com/vlemonade/Cafe-Management-System'
+    },
+
+    {
+        id: 4,
+        name: 'The MasterMind',
+        icon:Work4,
+        desc: 'A responsive corporate website',
+        language: 'HTML/CSS, JavaScript, WordPress, Bootstrap',
+        path: 'https://mastermind.ph/'
     },
 ]
 
